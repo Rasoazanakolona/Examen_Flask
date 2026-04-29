@@ -212,6 +212,33 @@
             object-fit: contain;
             border-radius: 15px;
         }
+        /* Media Query pour les smartphones (écrans de moins de 768px) */
+@media (max-width: 768px) {
+    .container {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr; /* Passage sur une seule colonne */
+    }
+
+    .Tete {
+        flex-direction: column; /* Le titre et le menu s'empilent */
+        text-align: center;
+        padding: 10px;
+    }
+
+    .Tete div {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .preview-container {
+        flex-direction: column; /* Les aperçus d'images s'empilent */
+    }
+}
     </style>
 </head>
 
