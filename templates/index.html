@@ -250,7 +250,7 @@
             
             <div style="display: flex; gap: 10px; margin-bottom: 15px;">
                 <div class="box-fixe">
-                    <img src="/static/images/animale/{{ choix_humain|lower }}.jpg" style="max-height: 80px;">
+                    <img src="/static/images/animale/{{ choix_humain }}.jpg" style="max-height: 80px;">
                 </div>
                 <div class="box-fixe">
                     <img src="/static/images/terrain/terrain_{{ terrain_sel }}.jpg" style="max-height: 80px;">
@@ -293,7 +293,7 @@
             <div style="font-size: 1.8rem; color: var(--ia-color); font-weight: 800; margin-bottom: 10px;">{{ choix_ia }}</div>
             
             <div class="box-fixe">
-                <img src="/static/images/animale/{{ choix_ia|lower }}.jpg" style="max-height: 80px;">
+                <img src="/static/images/animale/{{ choix_ia }}.jpg" style="max-height: 80px;">
             </div>
         {% else %}
             <p style="opacity: 0.5;">L'IA analyse vos choix...</p>
@@ -474,7 +474,7 @@ if (selectTerrain) {
     
     // Chemin vers tes images (ex: lapin.png, lion.png)
     // Assure-toi que les noms de fichiers correspondent aux noms dans ta liste
-    img.src = `/static/images/animale/${name.toLowerCase()}.jpg`; 
+    img.src = `/static/images/animale/${name}.jpg`; 
     
     img.style.display = 'block';
     icon.style.display = 'none';
